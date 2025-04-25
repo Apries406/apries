@@ -1,10 +1,21 @@
 // 通用设计 Token - SCSS 版本
 
 // 字体系列
-$font-family-base: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-	Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-$font-family-mono: 'SF Mono', SFMono-Regular, ui-monospace, 'Cascadia Mono',
-	Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+$font-family-base:
+  system-ui,
+  -apple-system,
+  BlinkMacSystemFont,
+  'Segoe UI',
+  Roboto,
+  Oxygen,
+  Ubuntu,
+  Cantarell,
+  'Open Sans',
+  'Helvetica Neue',
+  sans-serif;
+$font-family-mono:
+  'SF Mono', SFMono-Regular, ui-monospace, 'Cascadia Mono', Menlo, Monaco,
+  Consolas, 'Liberation Mono', 'Courier New', monospace;
 
 // 字体大小
 $font-size-xs: 0.75rem; // 12px
@@ -71,12 +82,15 @@ $radius-full: 9999px;
 
 // 阴影
 $shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-	0 2px 4px -1px rgba(0, 0, 0, 0.06);
-$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-	0 4px 6px -2px rgba(0, 0, 0, 0.05);
-$shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-	0 10px 10px -5px rgba(0, 0, 0, 0.04);
+$shadow-md:
+  0 4px 6px -1px rgba(0, 0, 0, 0.1),
+  0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$shadow-lg:
+  0 10px 15px -3px rgba(0, 0, 0, 0.1),
+  0 4px 6px -2px rgba(0, 0, 0, 0.05);
+$shadow-xl:
+  0 20px 25px -5px rgba(0, 0, 0, 0.1),
+  0 10px 10px -5px rgba(0, 0, 0, 0.04);
 $shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 $shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
 $shadow-none: none;
@@ -105,184 +119,182 @@ $border-width-8: 8px;
 
 // 主题颜色映射
 $themes: (
-	light: (
-		// 主颜色
-		color-primary-50: #f0f9ff,
-		color-primary-100: #e0f2fe,
-		color-primary-200: #bae6fd,
-		color-primary-300: #7dd3fc,
-		color-primary-400: #38bdf8,
-		color-primary-500: #0ea5e9,
-		color-primary-600: #0284c7,
-		color-primary-700: #0369a1,
-		color-primary-800: #075985,
-		color-primary-900: #0c4a6e,
-		color-primary-950: #082f49,
+  light: (
+    // 主颜色
+    apries-1: #fff6e8,
+    apries-2: #fee2be,
+    apries-3: #fdcc95,
+    apries-4: #fbb46c,
+    apries-5: #fa9944,
+    apries-6: #f97d1c,
+    apries-7: #ce5d11,
+    apries-8: #a34109,
+    apries-9: #782a03,
+    apries-10: #4d1700,
 
-		// 中性色
-		color-gray-50: #f9fafb,
-		color-gray-100: #f3f4f6,
-		color-gray-200: #e5e7eb,
-		color-gray-300: #d1d5db,
-		color-gray-400: #9ca3af,
-		color-gray-500: #6b7280,
-		color-gray-600: #4b5563,
-		color-gray-700: #374151,
-		color-gray-800: #1f2937,
-		color-gray-900: #111827,
-		color-gray-950: #030712,
+    // 中性色
+    color-gray-50: #f9fafb,
+    color-gray-100: #f3f4f6,
+    color-gray-200: #e5e7eb,
+    color-gray-300: #d1d5db,
+    color-gray-400: #9ca3af,
+    color-gray-500: #6b7280,
+    color-gray-600: #4b5563,
+    color-gray-700: #374151,
+    color-gray-800: #1f2937,
+    color-gray-900: #111827,
+    color-gray-950: #030712,
 
-		// 功能色
-		color-success-50: #f0fdf4,
-		color-success-500: #22c55e,
-		color-success-700: #15803d,
+    // 功能色
+    color-success-50: #f0fdf4,
+    color-success-500: #22c55e,
+    color-success-700: #15803d,
 
-		color-warning-50: #fffbeb,
-		color-warning-500: #f59e0b,
-		color-warning-700: #b45309,
+    color-warning-50: #fffbeb,
+    color-warning-500: #f59e0b,
+    color-warning-700: #b45309,
 
-		color-error-50: #fef2f2,
-		color-error-500: #ef4444,
-		color-error-700: #b91c1c,
+    color-error-50: #fef2f2,
+    color-error-500: #ef4444,
+    color-error-700: #b91c1c,
 
-		color-info-50: #eff6ff,
-		color-info-500: #3b82f6,
-		color-info-700: #1d4ed8,
+    color-info-50: #eff6ff,
+    color-info-500: #3b82f6,
+    color-info-700: #1d4ed8,
 
-		// 语义颜色
-		color-background: #ffffff,
-		color-background-subtle: #f9fafb,
-		// color-gray-50
-		color-foreground: #111827,
-		// color-gray-900
-		color-muted: #6b7280,
-		// color-gray-500
-		color-border: #e5e7eb,
-		// color-gray-200
-		color-border-hover: #d1d5db,
-		// color-gray-300
-		color-accent: #0ea5e9,
-		// color-primary-500
-		color-accent-hover: #0284c7,
-		// color-primary-600
-		color-accent-foreground: #ffffff,
+    // 语义颜色
+    color-background: #ffffff,
+    color-background-subtle: #f9fafb,
+    // color-gray-50
+    color-foreground: #111827,
+    // color-gray-900
+    color-muted: #6b7280,
+    // color-gray-500
+    color-border: #e5e7eb,
+    // color-gray-200
+    color-border-hover: #d1d5db,
+    // color-gray-300
+    color-accent: #0ea5e9,
+    // color-primary-500
+    color-accent-hover: #0284c7,
+    // color-primary-600
+    color-accent-foreground: #ffffff,
 
-		// 阴影 (保持亮色主题默认)
-		shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05),
-		shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-		0 2px 4px -1px rgba(0, 0, 0, 0.06),
-		shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-		0 4px 6px -2px rgba(0, 0, 0, 0.05),
-		shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-		0 10px 10px -5px rgba(0, 0, 0, 0.04),
-		shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25),
-	),
-	dark: (
-		// 主颜色暗色变体
-		color-primary-50: #082f49,
-		color-primary-100: #0c4a6e,
-		color-primary-200: #075985,
-		color-primary-300: #0369a1,
-		color-primary-400: #0284c7,
-		color-primary-500: #0ea5e9,
-		color-primary-600: #38bdf8,
-		color-primary-700: #7dd3fc,
-		color-primary-800: #bae6fd,
-		color-primary-900: #e0f2fe,
-		color-primary-950: #f0f9ff,
+    // 阴影 (保持亮色主题默认)
+    shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05),
+    shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06),
+    shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05),
+    shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04),
+    shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25),
+  ),
+  dark: (
+    // 主颜色暗色变体
+    dark-apries-1: #4d1700,
+    dark-apries-2: #782a03,
+    dark-apries-3: #a3440d,
+    dark-apries-4: #ce641d,
+    dark-apries-5: #f98a32,
+    dark-apries-6: #fa9842,
+    dark-apries-7: #fbb46d,
+    dark-apries-8: #fdce98,
+    dark-apries-9: #fee5c4,
+    dark-apries-10: #fff9f0,
 
-		// 中性色暗色变体 - 调换顺序以适应黑暗模式
-		color-gray-50: #030712,
-		color-gray-100: #111827,
-		color-gray-200: #1f2937,
-		color-gray-300: #374151,
-		color-gray-400: #4b5563,
-		color-gray-500: #6b7280,
-		color-gray-600: #9ca3af,
-		color-gray-700: #d1d5db,
-		color-gray-800: #e5e7eb,
-		color-gray-900: #f3f4f6,
-		color-gray-950: #f9fafb,
+    // 中性色暗色变体 - 调换顺序以适应黑暗模式
+    color-gray-50: #030712,
+    color-gray-100: #111827,
+    color-gray-200: #1f2937,
+    color-gray-300: #374151,
+    color-gray-400: #4b5563,
+    color-gray-500: #6b7280,
+    color-gray-600: #9ca3af,
+    color-gray-700: #d1d5db,
+    color-gray-800: #e5e7eb,
+    color-gray-900: #f3f4f6,
+    color-gray-950: #f9fafb,
 
-		// 功能色暗色变体
-		color-success-50: #052e16,
-		color-success-500: #22c55e,
-		color-success-700: #86efac,
+    // 功能色暗色变体
+    color-success-50: #052e16,
+    color-success-500: #22c55e,
+    color-success-700: #86efac,
 
-		color-warning-50: #431407,
-		color-warning-500: #f59e0b,
-		color-warning-700: #fcd34d,
+    color-warning-50: #431407,
+    color-warning-500: #f59e0b,
+    color-warning-700: #fcd34d,
 
-		color-error-50: #450a0a,
-		color-error-500: #ef4444,
-		color-error-700: #fca5a5,
+    color-error-50: #450a0a,
+    color-error-500: #ef4444,
+    color-error-700: #fca5a5,
 
-		color-info-50: #172554,
-		color-info-500: #3b82f6,
-		color-info-700: #93c5fd,
+    color-info-50: #172554,
+    color-info-500: #3b82f6,
+    color-info-700: #93c5fd,
 
-		// 语义颜色
-		color-background: #121212,
-		color-background-subtle: #030712,
-		// color-gray-50 in dark
-		color-foreground: #f3f4f6,
-		// color-gray-900 in dark
-		color-muted: #6b7280,
-		// color-gray-500
-		color-border: #1f2937,
-		// color-gray-200 in dark
-		color-border-hover: #374151,
-		// color-gray-300 in dark
-		color-accent: #0ea5e9,
-		// color-primary-500
-		color-accent-hover: #38bdf8,
-		// color-primary-400 in dark
-		color-accent-foreground: #000000,
+    // 语义颜色
+    color-background: #121212,
+    color-background-subtle: #030712,
+    // color-gray-50 in dark
+    color-foreground: #f3f4f6,
+    // color-gray-900 in dark
+    color-muted: #6b7280,
+    // color-gray-500
+    color-border: #1f2937,
+    // color-gray-200 in dark
+    color-border-hover: #374151,
+    // color-gray-300 in dark
+    color-accent: #0ea5e9,
+    // color-primary-500
+    color-accent-hover: #38bdf8,
+    // color-primary-400 in dark
+    color-accent-foreground: #000000,
 
-		// 阴影在暗色模式下的调整
-		shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3),
-		shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4),
-		0 2px 4px -1px rgba(0, 0, 0, 0.2),
-		shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5),
-		0 4px 6px -2px rgba(0, 0, 0, 0.3),
-		shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6),
-		0 10px 10px -5px rgba(0, 0, 0, 0.3),
-		shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.8),
-	),
+    // 阴影在暗色模式下的调整
+    shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3),
+    shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4),
+    0 2px 4px -1px rgba(0, 0, 0, 0.2),
+    shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5),
+    0 4px 6px -2px rgba(0, 0, 0, 0.3),
+    shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6),
+    0 10px 10px -5px rgba(0, 0, 0, 0.3),
+    shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.8),
+  ),
 );
 
 // 创建CSS变量从主题映射的函数
 @mixin generate-theme-variables($theme-name) {
-	$theme: map-get($themes, $theme-name);
+  $theme: map-get($themes, $theme-name);
 
-	@each $key, $value in $theme {
-		--#{$key}: #{$value};
-	}
+  @each $key, $value in $theme {
+    --#{$key}: #{$value};
+  }
 }
 
 // 应用主题
 :root {
-	// 默认应用亮色主题变量
-	@include generate-theme-variables('light');
+  // 默认应用亮色主题变量
+  @include generate-theme-variables('light');
 }
 
 // 亮色主题
 [data-theme='light'] {
-	@include generate-theme-variables('light');
+  @include generate-theme-variables('light');
 }
 
 // 暗色主题
 [data-theme='dark'] {
-	@include generate-theme-variables('dark');
+  @include generate-theme-variables('dark');
 }
 
 // 主题获取函数 - 在SCSS中使用变量
 @function theme($key, $theme-name: 'light') {
-	$theme: map-get($themes, $theme-name);
-	@return map-get($theme, $key);
+  $theme: map-get($themes, $theme-name);
+  @return map-get($theme, $key);
 }
 
 // 使用CSS变量的混合宏 - 可以在组件中使用
 @mixin uses-var($property, $var-name) {
-	#{$property}: var(--#{$var-name});
+  #{$property}: var(--#{$var-name});
 }

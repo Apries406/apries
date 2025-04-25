@@ -8,5 +8,15 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@apries/aurora": "link:",
+    "@apries/styles": "file:../styles",
+    "classnames": "^2.5.1",
+    "sass": "^1.87.0"
+  },
+  "peerDependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
 }

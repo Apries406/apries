@@ -1,0 +1,10 @@
+import { useState } from 'react'
+import { Button } from '@apries/aurora'
+
+import './App.css'
+
+function App() {
+  return <Button>Click me</Button>
+}
+
+export default App
